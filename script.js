@@ -9,6 +9,6 @@ document.addEventListener('DOMContentLoaded', () => {
   
   if(data){
 
-    githubSection.innerHTML = `<h2><a href="${data.html_url}">My GitHub Profile</a></h2>`
+    githubSection.innerHTML = `<h2><a href="${data.html_url}">My GitHub Profile</a></h2><ul><li>Followers: ${data.followers}</li><li>Following: ${data.following}</li></ul>`
   }
 });
